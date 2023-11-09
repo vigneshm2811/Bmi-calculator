@@ -8,7 +8,7 @@ function logedin(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
   if(email != "" && password !=""){
-    window.location.href = "../main/gender.html";
+    window.location.href = "./main/gender.html";
     localStorage.setItem("username",email);
   }
   else{
