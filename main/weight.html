@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/weight.css">
+</head>
+<body>
+    <h1 class="drop-in">Enter your weight</h1>
+    <div id="valid-weight"></div>
+    <div class="weights">
+        <div><img src="../assets/image/height.png" alt=""></div>
+  <div>
+    <form action="">
+        <div class="input-grp">
+            <div>
+                <select name="units" id="w-unit">
+                <option value="kg">Kg</option>
+                <option value="pounds">lb</option>
+              </select>
+            </div>
+            <input type="number" id="weight" name="weight" placeholder="Enter your Weight" min="0">
+          </div>        <input type="button" value="Next" id="sub-weight">
+    </form>
+  </div>
+</div>
+
+<script src="../js/weight.js"></script>
+<!-- <script>
+    let weightBtn = document.getElementById("sub-weight");
+    let weight;
+    let bmi;
+    let meters = localStorage.getItem("height");
+    console.log(meters);
+    weightBtn.addEventListener("click", ()=>{
+        weight = document.getElementById("weight").value;
+        if(weight !=""){
+        localStorage.setItem("weight",weight);
+        bmiCal(weight)
+        window.location.href = "../main/bmi.html";
+        }
+        else{
+            document.getElementById("valid-weight").textContent ="Please enter valid Weight"
+        }
+    });
+
+    function bmiCal(w){
+        let heights = localStorage.getItem("height");
+        let meters = heights/100;
+        bmi=w/(meters*meters);
+        localStorage.setItem("bmi",bmi);
+    }
+</script> -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/age.css">
+</head>
+<body>
+    <h1 class="drop-in">Enter your Age</h1>
+    <div id="valid-age"></div>
+    <div class="heights">
+        <div><img src="../assets/image/ages.png" alt=""></div>
+   
+  <div>
+    <form action="">
+      <div class="input-grp">
+        <div>Age</div>
+        <input type="number" id="age" name="height" placeholder="Enter your Age" min="0">
+      </div>
+        <input type="button" value="Next" id="sub-age">
+    </form>
+  </div>
+</div>
+<script src="../js/age.js"></script>
+<!-- <script>
+    let heightBtn = document.getElementById("sub-height");
+    let height;
+    heightBtn.addEventListener("click", ()=>{
+        height=document.getElementById("height").value;
+        if(height !=""){
+            localStorage.setItem("height",height);
+            window.location.href = "../main/weight.html";
+        }
+        else{
+            document.getElementById("valid-height").textContent ="Please enter valid height";
+        }
+      
+    });
+</script> -->
+    
+</body>
+</html>

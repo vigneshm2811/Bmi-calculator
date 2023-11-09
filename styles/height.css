@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: rgba(114, 104, 104, 0.24); 
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 3px 3px 4px rgba(17, 16, 16, 0.39);
+
+   letter-spacing: 5px;
+   margin-bottom:5% ;
+}
+input{
+    width: 70%;
+    margin: 5% auto;
+    margin-left: 3%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid silver;
+    font-size: 18px;
+    padding: 0.4rem 0;
+    background: transparent;
+}
+.heights{
+  
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+}
+
+
+input[type="button"] {
+   
+    width: 30%;
+    margin: 5% 25% ;
+    font-size: 20px;
+    padding: 10px 28px;
+    border: none;
+   cursor: pointer;
+   background-color: #38383f;
+   border-radius: 16px;
+   color: antiquewhite;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.658);
+}
+input[type="button"]:hover {
+   
+  scale: 1.1;
+  transition: 0.5s;
+   box-shadow: 0 7px 10px rgba(49, 49, 48, 0.651);
+}
+img{
+  
+    width: 18rem;
+    margin: 0 4rem;
+    
+    
+}
+
+#valid-height{
+    color: rgba(228, 6, 6, 0.781);
+    font-size: 20px;
+}
+
+.input-grp{
+    display: flex;
+    align-items: center;
+}
+.input-grp div select{
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.795);
+    /* border: 1px solid gray; */
+    padding: 4px 12px;
+    border-radius: 3px;
+    background-color: #5e5e6444;
+    outline: none;
+    border: none;
+}
+select option{
+    text-align: left;
+    padding-left: 1px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+.drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   
+  
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+   

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/height.css">
+</head>
+<body>
+    <h1 class="drop-in">Enter your Height</h1>
+    <div id="valid-height"></div>
+    <div class="heights">
+        <div><img src="../assets/image/6386273.jpg" alt=""></div>
+   
+  <div>
+    <form action="">
+      <div class="input-grp">
+        <div>
+            <select name="units" id="w-unit">
+            <option value="cm">Cm</option>
+            <option value="feet">Ft</option>
+          </select></div>
+        <input type="number" id="height" name="height" placeholder="Enter your Height" min="0">
+      </div>
+        <input type="button" value="Next" id="sub-height">
+    </form>
+  </div>
+</div>
+<script src="../js/height.js"></script>
+<!-- <script>
+    let heightBtn = document.getElementById("sub-height");
+    let height;
+    heightBtn.addEventListener("click", ()=>{
+        height=document.getElementById("height").value;
+        if(height !=""){
+            localStorage.setItem("height",height);
+            window.location.href = "../main/weight.html";
+        }
+        else{
+            document.getElementById("valid-height").textContent ="Please enter valid height";
+        }
+      
+    });
+</script> -->
+    
+</body>
+</html>

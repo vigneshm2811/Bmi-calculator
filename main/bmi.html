@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi-score</title>
+    <link rel="stylesheet" href="../styles/bmi.css">
+</head>
+<body>
+    <h1>Body Mass Index</h1>
+   <div class="pie">
+    <ul class="chart-skills">
+        <li>
+          <span>Under Weight</span>
+        </li>
+        <li>
+          <span>Normal</span>
+        </li>
+        <li>
+          <span>Over Weight</span>
+        </li>
+        <li>
+          <span>Obese</span>
+        </li>
+      </ul>
+   </div>
+    
+      
+    <div class="bmi">
+        <!-- <div>
+            <img src="../assets/image/65Z_2112.w012.n001.20A.p20.20.jpg" alt="" srcset="">
+        </div> -->
+        <div>
+            <h2>Hi <span id="user">USER</span> here Your BMI</h2>
+            <h3><span id="bmi"></span> </h3>
+            <h3><span id="report"></span></h3> 
+            <ul>
+                <li>Height : <span id="height-show"></span> <span id="height-units"></span></li>
+                <li>Weight : <span id="weight-show"></span><span id="weight-units"></span></li>
+                <li>Age : <span id="age-show"></span></li>
+                <li>Gender : <span id="gender-show"></span></li>
+            </ul>
+        </div>
+        <input type="button" value="Try again" id="tryagain">
+    </div>
+    
+    <div class="imgpos">
+        <img src="../assets/image/bmi01.png" alt="" srcset="" id="bmi01">
+        <img src="../assets/image/bmi02.png" alt="" id="bmi02">
+    </div>
+    <script src="../js/bmi.js"></script>
+    <!-- <script>
+        let bmi = localStorage.getItem("bmi");
+        let bmiScore = Number(bmi).toFixed(2);
+        let report;
+        let user = document.getElementById("user");
+        let result = document.getElementById("report");
+        let score =  document.getElementById("bmi");
+
+        if(bmi<18.5){
+            report= "Under Weight";
+            score.style.color = "orangered";
+            result.style.color = "orangered";
+            user.style.color="orangered";
+        }
+        else if(bmi>=18.5 && bmi<=24.9){
+            report= "Normal";
+            score.style.color = "green";
+            result.style.color = "green";
+            user.style.color="green";
+        }
+        else if(bmi>=25 && bmi<=29.9){
+            report= "Over Weight";
+            score.style.color = "lightcoral";
+            result.style.color = "lightcoral";
+            user.style.color="lightcoral";}
+        else{
+            report= "Obese";
+            score.style.color = "crimson";
+            result.style.color = "crimson";
+            user.style.color="crimson";
+        }
+
+        document.getElementById("user").textContent = localStorage.getItem("username");
+        document.getElementById("height-show").textContent = localStorage.getItem("height");
+        document.getElementById("weight-show").textContent = localStorage.getItem("weight");
+        document.getElementById("gender-show").textContent = localStorage.getItem("gender");
+        document.getElementById("bmi").textContent = bmiScore;
+        document.getElementById("report").textContent = report;
+    </script> -->
+</body>
+</html>
