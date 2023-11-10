@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    height: 100vh;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,9 @@ body{
     background: rgba(114, 104, 104, 0.24); 
  
 }
+.res{
+    margin-top: 9%;
+   }
 h1{
     text-align: center;
     font-size: 45px;
@@ -113,3 +116,111 @@ input::-webkit-inner-spin-button {
     }
    }
    
+
+   @media screen and (max-width:778px){   
+    input{
+        width: 50%;
+        margin: 3% auto;
+        margin-left: 1%;
+        font-size: 14px;
+        padding: 0.2rem 0;
+    }
+    img{
+     width: 9rem;
+     height: 9rem;
+     margin: 0 2rem;
+ }
+ h1{
+     font-size: 29px;  
+ }
+ .input-grp div select{
+    font-size: 16px;
+  margin-right: 2%;
+    padding: 4px 6px; 
+}
+
+input[type="button"] {
+    margin: 5% 22% ;
+    font-size: 17px;
+    padding: 9px 16px;
+}
+     }
+     
+     /* @media screen and (max-width:375px){
+            img{
+             width: 5.5rem;
+             height: 5.5rem;
+             margin: 0 1rem;
+         }
+         h1{
+            font-size: 23px;  
+        }
+         .input-grp div select{
+            font-size: 13px;
+          margin-right: 2%;
+            padding: 4px 3px; 
+        }
+
+        input{ 
+            margin-left: 1%;
+            font-size: 11px;
+            padding: 0.2rem 0;
+        }
+
+        input[type="button"] {
+            margin: 5% 22% ;
+            font-size: 13px;
+            padding: 9px 16px;
+        } 
+       }*/
+
+        
+     @media screen and (max-width:430px){
+        img{
+         width: 9rem;
+         height: 9rem;
+         margin: 0 30%;
+     }
+     input{
+        width: 80%;
+        margin: 3% auto;
+        margin-left: 1%;
+        font-size: 17px;
+        padding: 0.2rem 0;
+    }
+     h1{
+        font-size: 21px;
+        margin-left: 3%;
+        text-align: center; 
+    }
+     .input-grp div select{
+        font-size: 15px;
+      margin-right: 10%;
+        padding: 4px 3px; 
+    }
+.input-grp{
+margin: 5% 25%;
+}
+    input{
+        margin-left: 1%;
+        font-size: 15px;
+        padding: 0.2rem 0;
+    }
+
+    input[type="button"] {
+        margin: 0 33% ;
+        font-size: 16px;
+        padding: 9px 16px;
+    }
+    body{
+       display: block;
+       height: auto;         
+    }
+    .weights{
+        display: block;
+    }
+  .res{
+    margin-top: 27%;
+    margin-bottom: 0;
+  }
+   }

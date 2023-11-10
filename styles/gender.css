@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+  
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -69,3 +70,47 @@ img:hover{
     }
    }
    
+
+
+@media screen and (max-width:778px){
+   .images{
+    width: 40%;
+    align-items: center;
+   }
+   img{
+   
+    width: 10rem;
+    height: 10rem;
+    margin:0;
+}
+h1{
+    font-size: 32px;  
+}
+.inner h2{
+    font-size: 23px;
+    margin-top: 2%;
+    margin-left: 28%;
+}
+    }
+    
+    @media screen and (max-width:300px){
+        .images{
+            width: 30%;
+            align-items: center;
+           }
+           img{
+   
+            width: 7rem;
+            height: 7rem;
+            margin:0;
+        }
+        h1{
+            font-size: 24px;  
+        }
+        .inner h2{
+            font-size: 16px;
+            margin-top: 2%;
+            margin-left: 25%;
+        }
+    
+      }
