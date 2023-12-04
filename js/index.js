@@ -5,27 +5,18 @@ let female = document.getElementById("female");
 
 
 function logedin(){
-    let email = document.getElementById("email").value;
+    let userName = document.getElementById("userName").value;
     let password = document.getElementById("password").value;
-  if(email != "" && password !=""){
+  if(userName != "" && password !=""){
     window.location.href = "./main/gender.html";
-    localStorage.setItem("username",email);
+    localStorage.setItem("username",userName);
   }
   else{
     document.getElementById("valid").textContent="Enter valid login"
   }
 
 }
-// loginBtn.addEventListener("click", () => {
-//     let email = document.getElementById("email").value;
-//     let password = document.getElementById("password").value;
-//   if(email != "" && password !=""){
-//     window.location.href = "../main/gender.html";
-//   }
-//   else{
-//     document.getElementById("valid").textContent="Enter valid login"
-//   }
-// });
+
 
 
 

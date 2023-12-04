@@ -77,7 +77,7 @@ img{
   #bmi01{
     width: 20rem;
     position: relative;
-  
+    z-index: -1;
     right:300px;
    top: -100px;
     opacity: 0.9;
@@ -86,7 +86,7 @@ img{
   #bmi02{
     width: 19rem;
     position: relative;
-  
+    z-index: -1;
     left:335px;
    top: 200px;
     opacity: 0.9;
