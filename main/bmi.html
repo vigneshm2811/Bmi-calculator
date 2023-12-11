@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bmi-score</title>
     <link rel="stylesheet" href="../styles/bmi.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 </head>
 <body>
     <h1>Body Mass Index</h1>
-   <div class="pie">
+   <!-- <div class="pie">
     <ul class="chart-skills">
         <li>
           <span>Under Weight</span>
@@ -23,8 +24,9 @@
           <span>Obese</span>
         </li>
       </ul>
-   </div>
-    
+   </div> -->
+   <canvas id="myChart" height="40"></canvas>
+
       
     <div class="bmi">
         <!-- <div>
@@ -49,5 +51,40 @@
         <img src="../assets/image/bmi02.png" alt="" id="bmi02">
     </div>
     <script src="../js/bmi.js"></script>
+
+
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+              labels: ["Under Weight", "Normal", "Over Weight", "Obese"],
+              datasets: [{
+                  label: '# of Votes',
+                  data: [12, 16, 26,22],
+                  backgroundColor: [
+                      'orangered',
+                      'green',
+                      'lightcoral',
+                      'crimson'
+                    
+                  ],
+                  borderColor: [
+                  'orangered',
+                      'green',
+                      'lightcoral',
+                      'crimson'
+                
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+      rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI
+  }
+});
+
+</script>
 </body>
 </html>
